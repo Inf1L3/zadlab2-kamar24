@@ -113,6 +113,7 @@ delta=b*b-4*a*c;
 
 System.out.println("Delta= "+delta);
 System.out.println("Delta= "+delta);
+System.out.println("Delta= "+delta);
 
 
 
