@@ -5,8 +5,37 @@ import java.util.Scanner;
 
 public class Main {
 
+   @SuppressWarnings("empty-statement")
    public static void main(String[] args) {
+       int z=1;
+       while(z!=0){
+       System.out.println("1. Zadanie 1");
+           System.out.println("2. Zadanie 2");
+           System.out.println("3. Zadanie 3");
+           System.out.println("4. Zadanie 4");
+           System.out.println("0. Koniec pracy.");
+       Scanner odczyt= new Scanner(System.in);
+       z= odczyt.nextInt();
+       switch(z){
+           case 1:
+           {Zadania.zadanie1();
+           break;
+           }
+           case 2:
+           {Zadania.zadanie2();
+            break;  
+            }
+           case 3:
+           {Zadania.zadanie3();
+           break;
+           }
+           case 4:
+           {Zadania.zadanie4();
+            break;
+           }}}}}
         
+       
+               
     /*
        zadanie 3 4 6 7
        Scanner odczyt= new Scanner(System.in);
@@ -96,7 +125,7 @@ public class Main {
         System.out.println(i);
    
    }
- */
+ 
 int a,b,c,delta;
 
 a=b=c=0;
@@ -113,11 +142,52 @@ delta=b*b-4*a*c;
 
 System.out.println("Delta= "+delta);
 System.out.println("Delta= "+delta);
-System.out.println("Delta= "+delta);
+System.out.println("Delta= "+delta); 
 
+   //Zadanie 3
+   
+       double[] tab= new double[10];
+       int i;
+       for(i=0;i<10;i++)
+       {
+           System.out.println("Podaj element tablicy nr: "+i);
+       Scanner odczyt = new Scanner(System.in);
+        tab[i] = odczyt.nextDouble(); 
+        
+       }
+       int z = 1;
+       while(z!=0){
+           System.out.println("1. Wypisywanie od pierwszego elementu.");
+           System.out.println("2. Wypisywanie od ostatniego elementu.");
+           System.out.println("3. Wypisywanie elementów nieparzystych.");
+           System.out.println("4. Wypisywanie elementów parzystych.");
+           System.out.println("0. Koniec pracy.");
+           
+           Scanner odczyt= new Scanner(System.in);
+           z=odczyt.nextInt();
+           
+           switch(z){
+              case 1:
+               for(i=0;i<10;i++){
+               System.out.println(tab[i]);}
+             break;
+             case 2:
+               for(i=9;i>0;i--){
+               System.out.println("Elemenet tablicy od ostatniego: "+i+"= "+tab[i]);}
+             break;
+             case 3:
+               for(i=0;i<10;i=i+2){
+               System.out.println("Elemenet tablicy nieparzyste: "+i+"= "+tab[i]);}
+             break;
+             case 4:
+               for(i=1;i<10;i=i+2){
+               System.out.println("Elemenet tablicy parzyste: "+i+"= "+tab[i]);}
+             break;
+               
+               
+           }
+           
+       }
+       
+   */
 
-
-
-
- 
-}}
